@@ -2,8 +2,3 @@ runtime: nodejs14
 service: mjml
 
 
-skip_files:
-  - test/
-  - ^(.*/)?\..*$
-  - ^(.*/)?.*\.md$
-  - ^(.*/)?.*\.yaml$
