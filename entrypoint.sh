@@ -1,2 +1,2 @@
 npm install --omit=dev
-npm start
+nodejs ./index.js --port $PORT
