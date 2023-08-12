@@ -1,4 +1,3 @@
 runtime: nodejs14
 service: mjml
-
-
+entrypoint: /bin/bash entrypoint.sh
