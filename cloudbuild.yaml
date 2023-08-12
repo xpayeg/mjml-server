@@ -4,8 +4,8 @@ steps:
   #- name: 'gcr.io/cloud-builders/npm:node-14.10.1'
   #args: ['i', '-g', '@angular/cli@8.3.22']
   #Install node packages
-  - name: 'gcr.io/cloud-builders/npm:node-14.10.1'
-    args: ['install', '--omit=dev']
+  #- name: 'gcr.io/cloud-builders/npm:node-14.10.1'
+  #  args: ['install', '--omit=dev']
 
 
   # Deploy to google cloud app egnine
