@@ -1,14 +1,16 @@
 import os
 
+file_name = "app.yaml"
 branch_name = os.getenv('BRANCH_NAME') 
-#input file
-fin = open("app.yaml.temp", "rt")
-#output file to write the result to
-fout = open("app.yaml", "wt")
-#for each line in the input file
-for line in fin:
-	#read replace the string and write to output file
-	fout.write(line.replace('$BRANCH_NAME', branch_name))
-#close input and output files
-fin.close()
-fout.close()
+
+file = open(file_name, "r")
+
+data = file.read()
+file.close()
+
+data = data.replace("BRANCH_NAME", branch_name)
+
+file = open(file_name, "w")
+file.write(data)
+file.flush()
+file.close()
