@@ -11,6 +11,7 @@ steps:
     entrypoint: 'python'
     args: ['./generate_app_yaml.py']
     env:
+      - 'REPO_NAME=$REPO_NAME'
       - 'BRANCH_NAME=$BRANCH_NAME'
 
   # Deploy to google cloud app egnine
