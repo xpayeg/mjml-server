@@ -1,6 +1,6 @@
 import os
 
-branchname = os.getenv('BRANCH_NAME') 
+branch_name = os.getenv('BRANCH_NAME') 
 #input file
 fin = open("app.yaml.temp", "rt")
 #output file to write the result to
