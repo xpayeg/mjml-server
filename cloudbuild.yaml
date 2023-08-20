@@ -8,6 +8,7 @@ steps:
   #  args: ['install', '--omit=dev']
 
   - name: 'python:3.8'
+    entrypoint: 'python'
     args: ['./generate_app_yaml.py']
   # Deploy to google cloud app egnine
   - name: 'gcr.io/cloud-builders/gcloud'
