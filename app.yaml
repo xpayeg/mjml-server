@@ -1,3 +1,9 @@
 runtime: nodejs14
 service: REPO_NAME
 entrypoint: /bin/bash entrypoint.sh
+
+automatic_scaling:
+  target_cpu_utilization: 0.85
+  min_instances: 1
+  max_instances: 5
+
