@@ -4,6 +4,6 @@ entrypoint: /bin/bash entrypoint.sh
 
 automatic_scaling:
   target_cpu_utilization: 0.85
-  min_instances: 1
-  max_instances: 5
+  min_instances: 0
+  max_instances: 1
 
